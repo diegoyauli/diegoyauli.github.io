@@ -16,10 +16,11 @@ my $denominacion_programa = uc($cgi->param('denominacion_programa')) || '';
 print $cgi->header(-type => 'text/html', -charset => 'UTF-8');
 print $cgi->start_html('Resultados de la Búsqueda');
 
-my $csv_file = 'ruta/a/tu/archivo/Programas_de_Universidades.csv';
+my $csv_file = 'ProgramasdeUniversidades.csv'; # Ruta relativa al archivo CSV en tu repositorio
 
 my $csv = Text::CSV->new ({ binary => 1, auto_diag => 1, sep_char => '|' });
 
+# Abrir el archivo CSV que se encuentra en el repositorio
 open my $fh, '<:encoding(UTF-8)', $csv_file or die "No se puede abrir el archivo CSV: $!";
 
 print "<h2>Resultados de la Búsqueda</h2>";
