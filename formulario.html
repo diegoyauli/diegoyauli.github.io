@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Universidades Licenciadas</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Consulta de Universidades Licenciadas</h1>
+    <form action="/cgi-bin/buscar.cgi" method="get">
+        <label for="nombre_universidad">Nombre de la Universidad:</label>
+        <input type="text" id="nombre_universidad" name="nombre_universidad" placeholder="Ej: Universidad Nacional de San Marcos">
+        <br>
+        <label for="periodo_licenciamiento">Periodo de Licenciamiento:</label>
+        <input type="text" id="periodo_licenciamiento" name="periodo_licenciamiento" placeholder="Ej: 2015-2025">
+        <br>
+        <label for="departamento_local">Departamento Local:</label>
+        <input type="text" id="departamento_local" name="departamento_local" placeholder="Ej: Lima">
+        <br>
+        <label for="denominacion_programa">Denominación del Programa:</label>
+        <input type="text" id="denominacion_programa" name="denominacion_programa" placeholder="Ej: Ingeniería Civil">
+        <br>
+        <input type="submit" value="Buscar">
+    </form>
+</body>
+</html>
+
+
